@@ -1,0 +1,44 @@
+[
+  {
+    "numberOfSteps": 5878,
+    "distance": 3.4,
+    "averageActivePace": 2.7,
+    "floorsAscended": 2
+  },
+  {
+    "numberOfSteps": 5457,
+    "distance": 2.3,
+    "averageActivePace": 3.4,
+    "floorsAscended": 25
+  },
+  {
+    "numberOfSteps": 4100,
+    "distance": 2.2,
+    "averageActivePace": 3.19,
+    "floorsAscended": 4
+  },
+  {
+    "numberOfSteps": 638,
+    "distance": 0.28,
+    "averageActivePace": 2.5,
+    "floorsAscended": 6
+  },
+  {
+    "numberOfSteps": 6166,
+    "distance": 2.9,
+    "averageActivePace": 2.9,
+    "floorsAscended": 36
+  },
+  {
+    "numberOfSteps": 6988,
+    "distance": 3.6,
+    "averageActivePace": 3.2,
+    "floorsAscended": 4
+  },
+  {
+    "numberOfSteps": 6931,
+    "distance": 3.4,
+    "averageActivePace": 3.7,
+    "floorsAscended": 4
+  }
+]
