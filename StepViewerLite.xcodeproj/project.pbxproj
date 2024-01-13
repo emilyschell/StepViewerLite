@@ -18,6 +18,7 @@
 		D34466222B52F40D00298C41 /* demoPedData.json in Resources */ = {isa = PBXBuildFile; fileRef = D34466212B52F40D00298C41 /* demoPedData.json */; };
 		D34466242B52F94A00298C41 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466232B52F94A00298C41 /* DemoData.swift */; };
 		D34466262B531D6700298C41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466252B531D6700298C41 /* DetailView.swift */; };
+		D34466282B5320C300298C41 /* WeeklyAverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466272B5320C300298C41 /* WeeklyAverages.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		D34466212B52F40D00298C41 /* demoPedData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demoPedData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		D34466232B52F94A00298C41 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		D34466252B531D6700298C41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D34466272B5320C300298C41 /* WeeklyAverages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAverages.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */,
 				D34465F72B51C65400298C41 /* WeeklyView.swift */,
 				D34466252B531D6700298C41 /* DetailView.swift */,
+				D34466272B5320C300298C41 /* WeeklyAverages.swift */,
 				D344661F2B52F3C900298C41 /* DailyData.swift */,
 				D34466232B52F94A00298C41 /* DemoData.swift */,
 				D34466212B52F40D00298C41 /* demoPedData.json */,
@@ -270,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D34466282B5320C300298C41 /* WeeklyAverages.swift in Sources */,
 				D34466242B52F94A00298C41 /* DemoData.swift in Sources */,
 				D34466202B52F3C900298C41 /* DailyData.swift in Sources */,
 				D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */,

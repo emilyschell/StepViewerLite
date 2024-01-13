@@ -1,5 +1,5 @@
 //
-//  DailySteps.swift
+//  DailyData.swift
 //  StepViewerLite
 //
 //  Created by Emily Schell on 1/13/24.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailyData: Codable {
+struct DailyData: Codable, Hashable {
     
     enum CodingKeys: CodingKey {
         case numberOfSteps
@@ -17,7 +17,7 @@ struct DailyData: Codable {
     }
     
     var date: Date? = Date()
-    var numberOfSteps: Int
+    var numberOfSteps: Double
     var distance: Double
     var averageActivePace: Double
     var floorsAscended: Double
