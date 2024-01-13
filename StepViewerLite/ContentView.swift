@@ -18,32 +18,37 @@ struct ContentView: View {
     
     @State private var stepsData: [DailySteps] = [DailySteps]()
     
-    private func getStepsData() -> [DailySteps] {
-        if isPedometerDataAvailable {
-            var dataList: [DailySteps] = [DailySteps]()
-            for daysAgo in (0...6) {
-                guard let queryStartDate = Calendar.current.date(byAdding: .day, value: -daysAgo, to: Date()) else { return [] }
-                guard let queryEndDate = Calendar.current.date(byAdding: .day, value: 1, to: queryStartDate) else { return [] }
+    private func queryPedometer() {
+        for daysAgo in (0...6) {
+            guard let queryStartDate = Calendar.current.date(byAdding: .day, value: -daysAgo, to: Date()) else { return }
+            guard let queryEndDate = Calendar.current.date(byAdding: .day, value: 1, to: queryStartDate) else { return }
+
+            pedometer.queryPedometerData(from: Calendar.current.startOfDay(for: queryStartDate), to: Calendar.current.startOfDay(for: queryEndDate)) { (data, error) in
                 
-                pedometer.queryPedometerData(from: Calendar.current.startOfDay(for: queryStartDate), to: Calendar.current.startOfDay(for: queryEndDate)) { (data, error) in
-                    
-                    guard let dailyData = data, error == nil else { return }
-                    
-                    let dailySteps = DailySteps(
-                        date: queryStartDate,
-                        numberOfSteps: Int(truncating: dailyData.numberOfSteps),
-                        distance: Double(truncating: dailyData.distance ?? 0),
-                        averageActivePace: Double(truncating: dailyData.averageActivePace ?? 0),
-                        floorsAscended: Double(truncating: dailyData.floorsAscended ?? 0)
-                    )
-                    dataList.append(dailySteps)
-                }
+                guard let dailyData = data, error == nil else { return }
+
+                let dailySteps = DailySteps(
+                    date: queryStartDate,
+                    numberOfSteps: Int(truncating: dailyData.numberOfSteps),
+                    distance: Double(truncating: dailyData.distance ?? 0),
+                    averageActivePace: Double(truncating: dailyData.averageActivePace ?? 0),
+                    floorsAscended: Double(truncating: dailyData.floorsAscended ?? 0)
+                )
+                stepsData.append(dailySteps)
             }
-            return dataList
+        }
+    }
+
+    private func showDemoData() {
+        // TODO: show Toast Msg
+        stepsData = demoData.demoStepsData
+    }
+
+    private func getSteps() {
+        if isPedometerDataAvailable {
+            queryPedometer()
         } else {
-            // TODO: show Toast Msg
-            print("demo", demoData.demoStepsData)
-            return demoData.demoStepsData
+            showDemoData()
         }
     }
     
@@ -78,7 +83,7 @@ struct ContentView: View {
         .navigationTitle("Weekly Steps")
         .padding()
         .onAppear() {
-            self.stepsData = getStepsData()
+            getSteps()
         }
     }
 }
