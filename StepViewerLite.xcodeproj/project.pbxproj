@@ -8,15 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */; };
-		D34465F82B51C65400298C41 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F72B51C65400298C41 /* ContentView.swift */; };
+		D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F72B51C65400298C41 /* WeeklyView.swift */; };
 		D34465FA2B51C65600298C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34465F92B51C65600298C41 /* Assets.xcassets */; };
 		D34465FD2B51C65600298C41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34465FC2B51C65600298C41 /* Preview Assets.xcassets */; };
 		D34466072B51C65600298C41 /* StepViewerLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466062B51C65600298C41 /* StepViewerLiteTests.swift */; };
 		D34466112B51C65600298C41 /* StepViewerLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */; };
 		D34466132B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */; };
-		D34466202B52F3C900298C41 /* DailySteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344661F2B52F3C900298C41 /* DailySteps.swift */; };
+		D34466202B52F3C900298C41 /* DailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344661F2B52F3C900298C41 /* DailyData.swift */; };
 		D34466222B52F40D00298C41 /* demoPedData.json in Resources */ = {isa = PBXBuildFile; fileRef = D34466212B52F40D00298C41 /* demoPedData.json */; };
-		D34466242B52F94A00298C41 /* DemoStepsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466232B52F94A00298C41 /* DemoStepsData.swift */; };
+		D34466242B52F94A00298C41 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466232B52F94A00298C41 /* DemoData.swift */; };
+		D34466262B531D6700298C41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466252B531D6700298C41 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 /* Begin PBXFileReference section */
 		D34465F22B51C65400298C41 /* StepViewerLite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepViewerLite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteApp.swift; sourceTree = "<group>"; };
-		D34465F72B51C65400298C41 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D34465F72B51C65400298C41 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 		D34465F92B51C65600298C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34465FC2B51C65600298C41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D34466022B51C65600298C41 /* StepViewerLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,9 +48,10 @@
 		D344660C2B51C65600298C41 /* StepViewerLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteUITests.swift; sourceTree = "<group>"; };
 		D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D344661F2B52F3C900298C41 /* DailySteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailySteps.swift; sourceTree = "<group>"; };
+		D344661F2B52F3C900298C41 /* DailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyData.swift; sourceTree = "<group>"; };
 		D34466212B52F40D00298C41 /* demoPedData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demoPedData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
-		D34466232B52F94A00298C41 /* DemoStepsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoStepsData.swift; sourceTree = "<group>"; };
+		D34466232B52F94A00298C41 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
+		D34466252B531D6700298C41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,10 @@
 			isa = PBXGroup;
 			children = (
 				D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */,
-				D34465F72B51C65400298C41 /* ContentView.swift */,
-				D344661F2B52F3C900298C41 /* DailySteps.swift */,
-				D34466232B52F94A00298C41 /* DemoStepsData.swift */,
+				D34465F72B51C65400298C41 /* WeeklyView.swift */,
+				D34466252B531D6700298C41 /* DetailView.swift */,
+				D344661F2B52F3C900298C41 /* DailyData.swift */,
+				D34466232B52F94A00298C41 /* DemoData.swift */,
 				D34466212B52F40D00298C41 /* demoPedData.json */,
 				D34465F92B51C65600298C41 /* Assets.xcassets */,
 				D34465FB2B51C65600298C41 /* Preview Content */,
@@ -267,9 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34466242B52F94A00298C41 /* DemoStepsData.swift in Sources */,
-				D34466202B52F3C900298C41 /* DailySteps.swift in Sources */,
-				D34465F82B51C65400298C41 /* ContentView.swift in Sources */,
+				D34466242B52F94A00298C41 /* DemoData.swift in Sources */,
+				D34466202B52F3C900298C41 /* DailyData.swift in Sources */,
+				D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */,
+				D34466262B531D6700298C41 /* DetailView.swift in Sources */,
 				D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

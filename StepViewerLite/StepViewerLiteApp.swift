@@ -11,7 +11,7 @@ import SwiftUI
 struct StepViewerLiteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WeeklyView()
         }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailySteps: Codable {
+struct DailyData: Codable {
     
     enum CodingKeys: CodingKey {
         case numberOfSteps

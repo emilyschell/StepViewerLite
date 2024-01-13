@@ -8,7 +8,7 @@
 import Foundation
 
 class DemoData: ObservableObject {
-    @Published var demoStepsData = [DailySteps]()
+    @Published var demoStepsData = [DailyData]()
     
     init() {
         loadData()
@@ -26,7 +26,7 @@ class DemoData: ObservableObject {
             return
         }
 
-        var demoStepsData = try? JSONDecoder().decode([DailySteps].self, from: data)
+        var demoStepsData = try? JSONDecoder().decode([DailyData].self, from: data)
         
         if demoStepsData != nil {
             for daysAgo in (0...6) {

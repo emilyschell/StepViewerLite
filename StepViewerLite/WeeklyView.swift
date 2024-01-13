@@ -8,7 +8,7 @@
 import SwiftUI
 import CoreMotion
 
-struct ContentView: View {
+struct WeeklyView: View {
     private let pedometer: CMPedometer = CMPedometer()
     @ObservedObject var demoData = DemoData()
     
@@ -16,7 +16,7 @@ struct ContentView: View {
         return CMPedometer.isStepCountingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.isFloorCountingAvailable() && CMPedometer.isPaceAvailable()
     }
     
-    @State private var stepsData: [DailySteps] = [DailySteps]()
+    @State private var stepsData: [DailyData] = [DailyData]()
     
     private func queryPedometer() {
         for daysAgo in (0...6) {
@@ -27,7 +27,7 @@ struct ContentView: View {
                 
                 guard let dailyData = data, error == nil else { return }
 
-                let dailySteps = DailySteps(
+                let dailySteps = DailyData(
                     date: queryStartDate,
                     numberOfSteps: Int(truncating: dailyData.numberOfSteps),
                     distance: Double(truncating: dailyData.distance ?? 0),
@@ -89,5 +89,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    WeeklyView()
 }
