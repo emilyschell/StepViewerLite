@@ -11,6 +11,7 @@ import CoreMotion
 struct WeeklyView: View {
     private let pedometer: CMPedometer = CMPedometer()
     @ObservedObject var demoData = DemoData()
+    @State var showAlert: Bool = false
     
     private var isPedometerDataAvailable: Bool {
         return CMPedometer.isStepCountingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.isFloorCountingAvailable() && CMPedometer.isPaceAvailable()
@@ -40,7 +41,6 @@ struct WeeklyView: View {
     }
     
     private func showDemoData() {
-        // TODO: show Toast Msg
         stepsData = demoData.demoStepsData
     }
     
@@ -48,6 +48,7 @@ struct WeeklyView: View {
         if isPedometerDataAvailable {
             queryPedometer()
         } else {
+            self.showAlert = true
             showDemoData()
         }
     }
@@ -86,6 +87,9 @@ struct WeeklyView: View {
         .onAppear() {
             getSteps()
         }
+        .alert(isPresented: $showAlert) {
+                    Alert(title: Text("Cannot get steps data from device."), message: Text("Using demo data."), dismissButton: .default(Text("Okay!")))
+                }
     }
 }
 
