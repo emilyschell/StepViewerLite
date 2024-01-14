@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct DailyData: Codable, Hashable {
+struct DailyData: Codable, Hashable, Identifiable {
     
     enum CodingKeys: CodingKey {
         case numberOfSteps
@@ -16,6 +16,7 @@ struct DailyData: Codable, Hashable {
         case floorsAscended
     }
     
+    var id = UUID()
     var date: Date? = Date()
     var numberOfSteps: Double
     var distance: Double

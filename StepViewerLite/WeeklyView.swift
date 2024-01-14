@@ -7,6 +7,7 @@
 
 import SwiftUI
 import CoreMotion
+import Charts
 
 struct WeeklyView: View {
     private let pedometer: CMPedometer = CMPedometer()
@@ -45,7 +46,7 @@ struct WeeklyView: View {
     }
     
     private func getSteps() {
-        if isPedometerDataAvailable {
+        if isPedometerDataAvailable && CMMotionActivityManager.authorizationStatus() == .authorized {
             queryPedometer()
         } else {
             self.showAlert = true
@@ -66,6 +67,18 @@ struct WeeklyView: View {
                 .padding()
 
                 List {
+                    Chart(stepsData) {
+                        BarMark(
+                            x: .value("Date", $0.date?.formatted(.dateTime.weekday(.abbreviated)) ?? ""),
+                            y: .value("Steps", $0.numberOfSteps)
+                        )
+                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                    }
+                    .chartXScale(
+                        domain: .automatic(includesZero: false, reversed: true)
+                    )
+                    .scaledToFit()
+                    .padding()
                     ForEach(Array(stepsData.enumerated()), id: \.element.date) { (index, dailyData) in
                         NavigationLink {
                             DetailView(stepsData: stepsData, selectedIndex: index)
@@ -82,6 +95,7 @@ struct WeeklyView: View {
                         }
                     }
                 }
+
             }
         }
         .onAppear() {
