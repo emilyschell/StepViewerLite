@@ -60,59 +60,99 @@ struct DetailView: View {
             }
             .padding(.leading)
             
-            VStack {
-                HStack {
-                    Text("Daily steps: \(String(format: "%.0f", stepsData[selectedIndex].numberOfSteps))")
-                        .font(.headline)
-                    Spacer()
+            HStack {
+                Image(systemName: "shoe")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding(.leading)
+                VStack {
+                    HStack {
+                        Text("Daily steps: \(String(format: "%.0f", stepsData[selectedIndex].numberOfSteps))")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    HStack {
+                        Text(compareToAverage(metric: stepsData[selectedIndex].numberOfSteps, average: weeklyAverages.steps))
+                        Spacer()
+                    }
                 }
-                HStack {
-                    Text(compareToAverage(metric: stepsData[selectedIndex].numberOfSteps, average: weeklyAverages.steps))
-                    Spacer()
-                }
+                .padding()
             }
-            .padding()
+            .background(RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color(.systemGroupedBackground)).shadow(color: .black, radius: 3))
+            .padding(.vertical)
             
-            VStack {
-                HStack {
-                    Text("Flights climbed: \(String(format: "%.0f", stepsData[selectedIndex].floorsAscended))")
-                        .font(.headline)
-                    Spacer()
+            HStack {
+                Image(systemName: "figure.stairs")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding(.leading)
+                VStack {
+                    HStack {
+                        Text("Flights climbed: \(String(format: "%.0f", stepsData[selectedIndex].floorsAscended))")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    HStack {
+                        Text(compareToAverage(metric: stepsData[selectedIndex].floorsAscended, average: weeklyAverages.floorsAscended))
+                        Spacer()
+                    }
                 }
-                HStack {
-                    Text(compareToAverage(metric: stepsData[selectedIndex].floorsAscended, average: weeklyAverages.floorsAscended))
-                    Spacer()
-                }
+                .padding()
             }
-            .padding()
+            .background(RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color(.systemGroupedBackground)).shadow(color: .black, radius: 3))
+            .padding(.vertical)
+
+            HStack {
+                Image(systemName: "road.lanes")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding(.leading)
+                VStack {
+                    HStack {
+                        Text("Distance: \(String(format: "%.1f", metersToMiles(distance: stepsData[selectedIndex].distance))) mi")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    HStack {
+                        Text(compareToAverage(metric: metersToMiles(distance: stepsData[selectedIndex].distance), average: metersToMiles(distance: weeklyAverages.distance)))
+                        Spacer()
+                    }
+                }
+                .padding()
+            }
+            .background(RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color(.systemGroupedBackground)).shadow(color: .black, radius: 3))
+            .padding(.vertical)
             
-            VStack {
-                HStack {
-                    Text("Distance: \(String(format: "%.1f", metersToMiles(distance: stepsData[selectedIndex].distance))) mi")
-                        .font(.headline)
+            HStack {
+                Image(systemName: "stopwatch")
+                    .font(.title)
+                    .foregroundColor(.blue)
+                    .padding(.leading)
+                VStack {
+                    HStack {
+                        Text("Average pace: \(String(format: "%.1f", secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace))) mph")
+                            .font(.headline)
+                        Spacer()
+                    }
+                    HStack {
+                        Text(compareToAverage(metric: secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace), average: secPerMeterToMPH(pace: weeklyAverages.pace)))
+                        Spacer()
+                    }
                     Spacer()
                 }
-                HStack {
-                    Text(compareToAverage(metric: metersToMiles(distance: stepsData[selectedIndex].distance), average: metersToMiles(distance: weeklyAverages.distance)))
-                    Spacer()
-                }
+                .padding()
             }
-            .padding()
+            .background(RoundedRectangle(cornerRadius: 15)
+                .foregroundColor(Color(.systemGroupedBackground)).shadow(color: .black, radius: 3))
+            .padding(.vertical)
+            .fixedSize(horizontal: false, vertical: true)
             
-            VStack {
-                HStack {
-                    Text("Average pace: \(String(format: "%.1f", secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace))) mph")
-                        .font(.headline)
-                    Spacer()
-                }
-                HStack {
-                    Text(compareToAverage(metric: secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace), average: secPerMeterToMPH(pace: weeklyAverages.pace)))
-                    Spacer()
-                }
-                Spacer()
-            }
-            .padding()
+            Spacer()
         }
+        .padding(.horizontal)
     }
 }
 
