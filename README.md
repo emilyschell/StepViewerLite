@@ -11,9 +11,11 @@ StepViewerLite is a demo iPhone app in Swift and SwiftUI, using XCTest and Swift
 
 Some areas I would improve in this app in the future or if doing it again:
 
+- Do a better job of dependency injection to facilitate better unit testing coverage
 - Handle case with denied permissions gracefully (inform user and load demo data)
-- Move most business logic into a ViewModel and out of the Views
+- Move more business logic into ViewModels and out of the Views
 - Break more of the View logic into smaller re-usable components (eg. a "daily steps row", "detail view row" etc.)
+- Have a repository for holding steps data and possibly retrieve data more efficiently
 - Move bar chart out of list (figure out how to scroll outer view with a nested list)
 - Add splash screen/loading indicators
 - Improve UI/styling

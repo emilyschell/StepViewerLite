@@ -18,6 +18,7 @@
 		D34466242B52F94A00298C41 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466232B52F94A00298C41 /* DemoData.swift */; };
 		D34466262B531D6700298C41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466252B531D6700298C41 /* DetailView.swift */; };
 		D34466282B5320C300298C41 /* WeeklyAverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466272B5320C300298C41 /* WeeklyAverages.swift */; };
+		D3881BD62B544E810092A44E /* WeeklyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3881BD52B544E810092A44E /* WeeklyViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D34466252B531D6700298C41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D34466272B5320C300298C41 /* WeeklyAverages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAverages.swift; sourceTree = "<group>"; };
 		D344662F2B542AF000298C41 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D3881BD52B544E810092A44E /* WeeklyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */,
 				D34465F72B51C65400298C41 /* WeeklyView.swift */,
+				D3881BD52B544E810092A44E /* WeeklyViewModel.swift */,
 				D34466252B531D6700298C41 /* DetailView.swift */,
 				D34466272B5320C300298C41 /* WeeklyAverages.swift */,
 				D344661F2B52F3C900298C41 /* DailyData.swift */,
@@ -267,6 +270,7 @@
 				D34466242B52F94A00298C41 /* DemoData.swift in Sources */,
 				D34466202B52F3C900298C41 /* DailyData.swift in Sources */,
 				D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */,
+				D3881BD62B544E810092A44E /* WeeklyViewModel.swift in Sources */,
 				D34466262B531D6700298C41 /* DetailView.swift in Sources */,
 				D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */,
 			);
