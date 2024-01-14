@@ -1,7 +1,7 @@
 # StepViewerLite
 ## _View your steps, and that's it_
 
-StepViewerLite is a demo iPhone app in Swift and SwiftUI, using XCTest and Swift Snapshot Testing for unit testing.
+StepViewerLite is a demo iPhone app in Swift and SwiftUI, using Apple's CMPedometer library and XCTest for unit testing.
 
 ## Features
 
@@ -12,14 +12,16 @@ StepViewerLite is a demo iPhone app in Swift and SwiftUI, using XCTest and Swift
 Some areas I would improve in this app in the future or if doing it again:
 
 - Do a better job of dependency injection to facilitate better unit testing coverage
+- Example: refactor WeeklyViewModel to take CMPedometer as an argument, pass in through app component, mock CMPedometer in unit tests and verify called and data retrieved correctly
+- Write out test demo data for DetailViewTests so that test is less tightly coupled with DemoData class
 - Handle case with denied permissions gracefully (inform user and load demo data)
-- Move more business logic into ViewModels and out of the Views
 - Break more of the View logic into smaller re-usable components (eg. a "daily steps row", "detail view row" etc.)
-- Have a repository for holding steps data and possibly retrieve data more efficiently
+- Have a repository for holding steps data and possibly retrieve data more efficiently from CMPedometer
 - Move bar chart out of list (figure out how to scroll outer view with a nested list)
 - Add splash screen/loading indicators
 - Improve UI/styling
 - Better organize file structure
+- Use Swift SnapshotTesting and ViewInspector libraries to add UI tests verifying all expected components are rendered
 
 
 ## Installation

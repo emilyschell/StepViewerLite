@@ -10,7 +10,8 @@ import SwiftUI
 struct DetailView: View {
     private var stepsData: [DailyData]
     private var selectedIndex: Int
-    private var weeklyAverages: WeeklyAverages
+    var weeklyAverages: WeeklyAverages
+    @ObservedObject var viewModel = DetailViewModel()
     
     init(stepsData: [DailyData], selectedIndex: Int) {
         self.stepsData = stepsData
@@ -36,21 +37,6 @@ struct DetailView: View {
             )
     }
     
-    private func compareToAverage(metric: Double, average: Double) -> String {
-        let aboveOrBelow = (metric - average) > 0 ? "above" : "below"
-        let difference = String(format: "%.2f", abs(metric - average))
-        return "\(difference) \(aboveOrBelow) this week's average"
-    }
-    
-    private func metersToMiles(distance: Double) -> Double {
-        let distanceInMeters = Measurement(value: distance, unit: UnitLength.meters)
-        return Double(distanceInMeters.converted(to: UnitLength.miles).value)
-    }
-    
-    private func secPerMeterToMPH(pace: Double) -> Double {
-        return pace * 2.23694
-    }
-    
     var body: some View {
         VStack {
             HStack {
@@ -72,7 +58,7 @@ struct DetailView: View {
                         Spacer()
                     }
                     HStack {
-                        Text(compareToAverage(metric: stepsData[selectedIndex].numberOfSteps, average: weeklyAverages.steps))
+                        Text(viewModel.compareToAverage(metric: stepsData[selectedIndex].numberOfSteps, average: weeklyAverages.steps))
                         Spacer()
                     }
                 }
@@ -94,7 +80,7 @@ struct DetailView: View {
                         Spacer()
                     }
                     HStack {
-                        Text(compareToAverage(metric: stepsData[selectedIndex].floorsAscended, average: weeklyAverages.floorsAscended))
+                        Text(viewModel.compareToAverage(metric: stepsData[selectedIndex].floorsAscended, average: weeklyAverages.floorsAscended))
                         Spacer()
                     }
                 }
@@ -111,12 +97,12 @@ struct DetailView: View {
                     .padding(.leading)
                 VStack {
                     HStack {
-                        Text("Distance: \(String(format: "%.1f", metersToMiles(distance: stepsData[selectedIndex].distance))) mi")
+                        Text("Distance: \(String(format: "%.1f", viewModel.metersToMiles(distance: stepsData[selectedIndex].distance))) mi")
                             .font(.headline)
                         Spacer()
                     }
                     HStack {
-                        Text(compareToAverage(metric: metersToMiles(distance: stepsData[selectedIndex].distance), average: metersToMiles(distance: weeklyAverages.distance)))
+                        Text(viewModel.compareToAverage(metric: viewModel.metersToMiles(distance: stepsData[selectedIndex].distance), average: viewModel.metersToMiles(distance: weeklyAverages.distance)))
                         Spacer()
                     }
                 }
@@ -133,12 +119,12 @@ struct DetailView: View {
                     .padding(.leading)
                 VStack {
                     HStack {
-                        Text("Average pace: \(String(format: "%.1f", secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace))) mph")
+                        Text("Average pace: \(String(format: "%.1f", viewModel.secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace))) mph")
                             .font(.headline)
                         Spacer()
                     }
                     HStack {
-                        Text(compareToAverage(metric: secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace), average: secPerMeterToMPH(pace: weeklyAverages.pace)))
+                        Text(viewModel.compareToAverage(metric: viewModel.secPerMeterToMPH(pace: stepsData[selectedIndex].averageActivePace), average: viewModel.secPerMeterToMPH(pace: weeklyAverages.pace)))
                         Spacer()
                     }
                     Spacer()

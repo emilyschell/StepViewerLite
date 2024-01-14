@@ -10,26 +10,20 @@
 		D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */; };
 		D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F72B51C65400298C41 /* WeeklyView.swift */; };
 		D34465FA2B51C65600298C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34465F92B51C65600298C41 /* Assets.xcassets */; };
-		D34466072B51C65600298C41 /* StepViewerLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466062B51C65600298C41 /* StepViewerLiteTests.swift */; };
-		D34466112B51C65600298C41 /* StepViewerLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */; };
-		D34466132B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */; };
+		D34466072B51C65600298C41 /* WeeklyViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466062B51C65600298C41 /* WeeklyViewModelTests.swift */; };
 		D34466202B52F3C900298C41 /* DailyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D344661F2B52F3C900298C41 /* DailyData.swift */; };
 		D34466222B52F40D00298C41 /* demoPedData.json in Resources */ = {isa = PBXBuildFile; fileRef = D34466212B52F40D00298C41 /* demoPedData.json */; };
 		D34466242B52F94A00298C41 /* DemoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466232B52F94A00298C41 /* DemoData.swift */; };
 		D34466262B531D6700298C41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466252B531D6700298C41 /* DetailView.swift */; };
 		D34466282B5320C300298C41 /* WeeklyAverages.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466272B5320C300298C41 /* WeeklyAverages.swift */; };
 		D3881BD62B544E810092A44E /* WeeklyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3881BD52B544E810092A44E /* WeeklyViewModel.swift */; };
+		D3881BD82B546F650092A44E /* DetailViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3881BD72B546F650092A44E /* DetailViewTests.swift */; };
+		D3881BDA2B5479C80092A44E /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3881BD92B5479C80092A44E /* DetailViewModel.swift */; };
+		D3881BDC2B547AB10092A44E /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3881BDB2B547AB10092A44E /* DetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		D34466032B51C65600298C41 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D34465EA2B51C65400298C41 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D34465F12B51C65400298C41;
-			remoteInfo = StepViewerLite;
-		};
-		D344660D2B51C65600298C41 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D34465EA2B51C65400298C41 /* Project object */;
 			proxyType = 1;
@@ -44,10 +38,7 @@
 		D34465F72B51C65400298C41 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 		D34465F92B51C65600298C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D34466022B51C65600298C41 /* StepViewerLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D34466062B51C65600298C41 /* StepViewerLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteTests.swift; sourceTree = "<group>"; };
-		D344660C2B51C65600298C41 /* StepViewerLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteUITests.swift; sourceTree = "<group>"; };
-		D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D34466062B51C65600298C41 /* WeeklyViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewModelTests.swift; sourceTree = "<group>"; };
 		D344661F2B52F3C900298C41 /* DailyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyData.swift; sourceTree = "<group>"; };
 		D34466212B52F40D00298C41 /* demoPedData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = demoPedData.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		D34466232B52F94A00298C41 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
@@ -55,6 +46,9 @@
 		D34466272B5320C300298C41 /* WeeklyAverages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAverages.swift; sourceTree = "<group>"; };
 		D344662F2B542AF000298C41 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D3881BD52B544E810092A44E /* WeeklyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewModel.swift; sourceTree = "<group>"; };
+		D3881BD72B546F650092A44E /* DetailViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewTests.swift; sourceTree = "<group>"; };
+		D3881BD92B5479C80092A44E /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		D3881BDB2B547AB10092A44E /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D34466092B51C65600298C41 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,7 +75,6 @@
 				D344662F2B542AF000298C41 /* README.md */,
 				D34465F42B51C65400298C41 /* StepViewerLite */,
 				D34466052B51C65600298C41 /* StepViewerLiteTests */,
-				D344660F2B51C65600298C41 /* StepViewerLiteUITests */,
 				D34465F32B51C65400298C41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,7 +84,6 @@
 			children = (
 				D34465F22B51C65400298C41 /* StepViewerLite.app */,
 				D34466022B51C65600298C41 /* StepViewerLiteTests.xctest */,
-				D344660C2B51C65600298C41 /* StepViewerLiteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +95,7 @@
 				D34465F72B51C65400298C41 /* WeeklyView.swift */,
 				D3881BD52B544E810092A44E /* WeeklyViewModel.swift */,
 				D34466252B531D6700298C41 /* DetailView.swift */,
+				D3881BD92B5479C80092A44E /* DetailViewModel.swift */,
 				D34466272B5320C300298C41 /* WeeklyAverages.swift */,
 				D344661F2B52F3C900298C41 /* DailyData.swift */,
 				D34466232B52F94A00298C41 /* DemoData.swift */,
@@ -122,18 +108,11 @@
 		D34466052B51C65600298C41 /* StepViewerLiteTests */ = {
 			isa = PBXGroup;
 			children = (
-				D34466062B51C65600298C41 /* StepViewerLiteTests.swift */,
+				D34466062B51C65600298C41 /* WeeklyViewModelTests.swift */,
+				D3881BD72B546F650092A44E /* DetailViewTests.swift */,
+				D3881BDB2B547AB10092A44E /* DetailViewModelTests.swift */,
 			);
 			path = StepViewerLiteTests;
-			sourceTree = "<group>";
-		};
-		D344660F2B51C65600298C41 /* StepViewerLiteUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */,
-				D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */,
-			);
-			path = StepViewerLiteUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,24 +153,6 @@
 			productReference = D34466022B51C65600298C41 /* StepViewerLiteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D344660B2B51C65600298C41 /* StepViewerLiteUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D344661C2B51C65600298C41 /* Build configuration list for PBXNativeTarget "StepViewerLiteUITests" */;
-			buildPhases = (
-				D34466082B51C65600298C41 /* Sources */,
-				D34466092B51C65600298C41 /* Frameworks */,
-				D344660A2B51C65600298C41 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D344660E2B51C65600298C41 /* PBXTargetDependency */,
-			);
-			name = StepViewerLiteUITests;
-			productName = StepViewerLiteUITests;
-			productReference = D344660C2B51C65600298C41 /* StepViewerLiteUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -206,10 +167,6 @@
 						CreatedOnToolsVersion = 15.2;
 					};
 					D34466012B51C65600298C41 = {
-						CreatedOnToolsVersion = 15.2;
-						TestTargetID = D34465F12B51C65400298C41;
-					};
-					D344660B2B51C65600298C41 = {
 						CreatedOnToolsVersion = 15.2;
 						TestTargetID = D34465F12B51C65400298C41;
 					};
@@ -230,7 +187,6 @@
 			targets = (
 				D34465F12B51C65400298C41 /* StepViewerLite */,
 				D34466012B51C65600298C41 /* StepViewerLiteTests */,
-				D344660B2B51C65600298C41 /* StepViewerLiteUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,13 +208,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D344660A2B51C65600298C41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -273,6 +222,7 @@
 				D3881BD62B544E810092A44E /* WeeklyViewModel.swift in Sources */,
 				D34466262B531D6700298C41 /* DetailView.swift in Sources */,
 				D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */,
+				D3881BDA2B5479C80092A44E /* DetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,16 +230,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D34466072B51C65600298C41 /* StepViewerLiteTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D34466082B51C65600298C41 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D34466132B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift in Sources */,
-				D34466112B51C65600298C41 /* StepViewerLiteUITests.swift in Sources */,
+				D34466072B51C65600298C41 /* WeeklyViewModelTests.swift in Sources */,
+				D3881BD82B546F650092A44E /* DetailViewTests.swift in Sources */,
+				D3881BDC2B547AB10092A44E /* DetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +243,6 @@
 			isa = PBXTargetDependency;
 			target = D34465F12B51C65400298C41 /* StepViewerLite */;
 			targetProxy = D34466032B51C65600298C41 /* PBXContainerItemProxy */;
-		};
-		D344660E2B51C65600298C41 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D34465F12B51C65400298C41 /* StepViewerLite */;
-			targetProxy = D344660D2B51C65600298C41 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -528,42 +466,6 @@
 			};
 			name = Release;
 		};
-		D344661D2B51C65600298C41 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PCW2789YWT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emily.StepViewerLiteUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StepViewerLite;
-			};
-			name = Debug;
-		};
-		D344661E2B51C65600298C41 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PCW2789YWT;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.emily.StepViewerLiteUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = StepViewerLite;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -590,15 +492,6 @@
 			buildConfigurations = (
 				D344661A2B51C65600298C41 /* Debug */,
 				D344661B2B51C65600298C41 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D344661C2B51C65600298C41 /* Build configuration list for PBXNativeTarget "StepViewerLiteUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D344661D2B51C65600298C41 /* Debug */,
-				D344661E2B51C65600298C41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
