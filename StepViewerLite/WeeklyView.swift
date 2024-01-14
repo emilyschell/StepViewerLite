@@ -46,7 +46,7 @@ struct WeeklyView: View {
     }
     
     private func getSteps() {
-        if isPedometerDataAvailable && CMMotionActivityManager.authorizationStatus() == .authorized {
+        if isPedometerDataAvailable {
             queryPedometer()
         } else {
             self.showAlert = true

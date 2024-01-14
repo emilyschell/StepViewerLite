@@ -54,6 +54,7 @@
 		D34466232B52F94A00298C41 /* DemoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoData.swift; sourceTree = "<group>"; };
 		D34466252B531D6700298C41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		D34466272B5320C300298C41 /* WeeklyAverages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAverages.swift; sourceTree = "<group>"; };
+		D344662F2B542AF000298C41 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 		D34465E92B51C65400298C41 = {
 			isa = PBXGroup;
 			children = (
+				D344662F2B542AF000298C41 /* README.md */,
 				D34465F42B51C65400298C41 /* StepViewerLite */,
 				D34466052B51C65600298C41 /* StepViewerLiteTests */,
 				D344660F2B51C65600298C41 /* StepViewerLiteUITests */,
