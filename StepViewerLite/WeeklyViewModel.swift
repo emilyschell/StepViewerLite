@@ -24,17 +24,19 @@ class WeeklyViewModel: ObservableObject {
             guard let queryEndDate = Calendar.current.date(byAdding: .day, value: 1, to: queryStartDate) else { return }
             
             pedometer.queryPedometerData(from: Calendar.current.startOfDay(for: queryStartDate), to: Calendar.current.startOfDay(for: queryEndDate)) { (data, error) in
-                
-                guard let dailyData = data, error == nil else { return }
-                
-                let dailySteps = DailyData(
-                    date: queryStartDate,
-                    numberOfSteps: Double(truncating: dailyData.numberOfSteps),
-                    distance: Double(truncating: dailyData.distance ?? 0),
-                    averageActivePace: Double(truncating: dailyData.averageActivePace ?? 0),
-                    floorsAscended: Double(truncating: dailyData.floorsAscended ?? 0)
-                )
-                self.stepsData.append(dailySteps)
+                DispatchQueue.main.async {
+
+                    guard let dailyData = data, error == nil else { return }
+
+                    let dailySteps = DailyData(
+                        date: queryStartDate,
+                        numberOfSteps: Double(truncating: dailyData.numberOfSteps),
+                        distance: Double(truncating: dailyData.distance ?? 0),
+                        averageActivePace: Double(truncating: dailyData.averageActivePace ?? 0),
+                        floorsAscended: Double(truncating: dailyData.floorsAscended ?? 0)
+                    )
+                    self.stepsData.append(dailySteps)
+                }
             }
         }
     }
