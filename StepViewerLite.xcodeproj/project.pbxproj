@@ -10,7 +10,6 @@
 		D34465F62B51C65400298C41 /* StepViewerLiteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */; };
 		D34465F82B51C65400298C41 /* WeeklyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34465F72B51C65400298C41 /* WeeklyView.swift */; };
 		D34465FA2B51C65600298C41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34465F92B51C65600298C41 /* Assets.xcassets */; };
-		D34465FD2B51C65600298C41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D34465FC2B51C65600298C41 /* Preview Assets.xcassets */; };
 		D34466072B51C65600298C41 /* StepViewerLiteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466062B51C65600298C41 /* StepViewerLiteTests.swift */; };
 		D34466112B51C65600298C41 /* StepViewerLiteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466102B51C65600298C41 /* StepViewerLiteUITests.swift */; };
 		D34466132B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34466122B51C65600298C41 /* StepViewerLiteUITestsLaunchTests.swift */; };
@@ -43,7 +42,6 @@
 		D34465F52B51C65400298C41 /* StepViewerLiteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteApp.swift; sourceTree = "<group>"; };
 		D34465F72B51C65400298C41 /* WeeklyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyView.swift; sourceTree = "<group>"; };
 		D34465F92B51C65600298C41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D34465FC2B51C65600298C41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D34466022B51C65600298C41 /* StepViewerLiteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34466062B51C65600298C41 /* StepViewerLiteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepViewerLiteTests.swift; sourceTree = "<group>"; };
 		D344660C2B51C65600298C41 /* StepViewerLiteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StepViewerLiteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -114,17 +112,8 @@
 				D34466232B52F94A00298C41 /* DemoData.swift */,
 				D34466212B52F40D00298C41 /* demoPedData.json */,
 				D34465F92B51C65600298C41 /* Assets.xcassets */,
-				D34465FB2B51C65600298C41 /* Preview Content */,
 			);
 			path = StepViewerLite;
-			sourceTree = "<group>";
-		};
-		D34465FB2B51C65600298C41 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				D34465FC2B51C65600298C41 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		D34466052B51C65600298C41 /* StepViewerLiteTests */ = {
@@ -249,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D34466222B52F40D00298C41 /* demoPedData.json in Resources */,
-				D34465FD2B51C65600298C41 /* Preview Assets.xcassets in Resources */,
 				D34465FA2B51C65600298C41 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +431,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StepViewerLite/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PCW2789YWT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -473,7 +461,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"StepViewerLite/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = PCW2789YWT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
